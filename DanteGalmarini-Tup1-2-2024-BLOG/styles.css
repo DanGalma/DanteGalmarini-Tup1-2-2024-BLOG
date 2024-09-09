@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #911d60;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #8b6370;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: #580b2a;
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.article h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.comment-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-btn:hover {
+    background-color: #580b2a;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.categories, .recent-posts, .social-media {
+    background-color: rgb(250, 210, 232);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.categories ul, .recent-posts ul, .social-media ul {
+    list-style: none;
+}
+
+.categories ul li a, .recent-posts ul li a, .social-media ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.categories ul li a:hover, .recent-posts ul li a:hover, .social-media ul li a:hover {
+    color: #580b2a;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+}
